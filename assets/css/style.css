@@ -26,3 +26,23 @@
   src: url("../fonts/IRANSans/IRANSansWeb_UltraLight.woff") format("woff");
   font-weight: 100;
 }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  background-color: #f7f7f7;
+  font-family: "IRANSansWeb";
+}
