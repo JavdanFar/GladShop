@@ -1,14 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>طراحی فرجام</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/icons/FontAwesome/css/all.css" />
+    <link rel="stylesheet" href="assets/libs/Splide/splide.min.css" />
   </head>
+
   <body>
-    
+    <header>
+      <div class="container">
+        <div class="w-100 h-100 header-content">
+          <div class="header-main-content">
+            <h2>طراحی فرجام</h2>
+            <div class="search-container">
+              <i class="fa-light fa-magnifying-glass"></i>
+              <input type="text" class="search" placeholder="جست و جو ..." />
+            </div>
+          </div>
+
+          <div class="icon-container">
+            <div class="click-dropdown">
+              <button onclick="dropdown()" class="dropbtn">
+                <i class="fa-solid fa-user dd-btn header-icon"></i>
+              </button>
+              <div id="clickDrop" class="click-dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+            <div class="border-right"></div>
+
+            <div class="hover-dropdown">
+              <button class="dropbtn">
+                <i class="fa-solid fa-cart-shopping header-icon"></i>
+              </button>
+              <div class="hover-dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="sub-header">
+      <div class="container h-100">
+        <ul>
+          <div class="mega-menu">
+            <button class="dropbtn">
+              دسته بندی کالا ها
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="mega-menu-content">
+              <div class="row">
+                <div class="column">
+                  <h3>موبایل</h3>
+                  <a href="#">سامسونگ</a>
+                  <a href="#">اپل</a>
+                  <a href="#">شیاومی</a>
+                </div>
+                <div class="column">
+                  <h3>کالای دیجیتال</h3>
+                  <a href="#">ماوس</a>
+                  <a href="#">کیبورد</a>
+                  <a href="#">گرافیک</a>
+                </div>
+                <div class="column">
+                  <h3>خانه و آشپزخانه</h3>
+                  <a href="#">گاز</a>
+                  <a href="#">یخچال</a>
+                  <a href="#">لباس شویی</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <li>
+            <div class="border-right"></div>
+          </li>
+          <li><a href="#">سوپر مارکت</a></li>
+          <li><a href="#">تخفیف ها</a></li>
+          <li><a href="#">فروشگاه من</a></li>
+          <li><a href="#">فروشگاه پلاس</a></li>
+          <li><a href="#">درباره ما</a></li>
+          <li><a href="#">فروشنده شوید</a></li>
+          <li><a href="#">فرصت های شغلی</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Slideshow container -->
+
+    <div class="container">
+      <div class="slider-images-container">
+        <div class="slider-right-side">
+          <div id="main-carousel" dir="ltr" class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <a href="https://digikala.com">
+                    <img src="assets/images/slideshow/1.jpg" alt="1" />
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="https://digikala.com">
+                    <img src="assets/images/slideshow/2.jpg" alt="2" />
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="https://digikala.com">
+                    <img src="assets/images/slideshow/3.jpg" alt="3" />
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="https://digikala.com">
+                    <img src="assets/images/slideshow/4.jpg" alt="4" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-left-side">
+          <div><img src="assets/images/slideshow/12.gif" alt="" /></div>
+          <div><img src="assets/images/slideshow/11.jpg" alt="" /></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/libs/Splide/splide.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
