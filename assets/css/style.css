@@ -319,32 +319,184 @@ header {
   width: 100%;
   gap: 10px;
   margin-top: 25px;
-  height: 400px;
+  /* height: 400px; */
 }
 
 .slider-right-side {
-  width: 65%;
+  width: 67.1%;
 }
 
 .slider-left-side {
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 32.9%;
   height: 100%;
 }
 
 .slider-right-side img {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: 460px;
 }
 
 .slider-left-side img {
   width: 100%;
   border-radius: 5px;
-  max-width: 91%;
+  max-width: 100%;
+}
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Products Slide Show Section
+|--------------------------------------------------------------------------
+*/
+
+.products-slider-container {
+  border-radius: 5px;
+  /* height: 360px; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  margin: 20px 0;
+  background-color: white;
+  padding-top: 1px;
+}
+
+.products-slider-header {
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
+  align-items: center;
+  border-bottom: #efefef solid 1px;
+  margin: 4px auto;
+  margin-bottom: 0;
+}
+
+.products-slider-header h3 {
+  border-bottom: #e73030 solid 2px;
+  padding: 5px 15px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.products-slider-header a {
+  padding: 5px 15px;
+  color: #666666;
+}
+
+.products-slider-item {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  /* height: 100%; */
+  align-items: center;
+  margin: 0 10px;
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }
+}
+
+.products-slider-item-image img {
+  height: 200px;
+  width: auto;
+  padding: 7px;
+}
+
+.products-slider-item-title {
+  margin-top: 18px;
+  
+}
+
+.products-slider-item-price {
+  margin-top: 10px;
+  margin-bottom: 26px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Products Slide Show Section
+|--------------------------------------------------------------------------
+*/
+
+.banner {
+  display: flex;
+  margin: 40px 0;
+  /* width: 100%; */
+  gap: 18px;
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Single Banner Section
+|--------------------------------------------------------------------------
+*/
+
+.single-banner {
+  margin: 18px 0;
+}
+
+.single-banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Brands Section
+|--------------------------------------------------------------------------
+*/
+
+.brand-slider-container {
+  border-radius: 5px;
+  height: 240px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  margin: 20px 0;
+  background-color: white;
+  padding-top: 1px;
+}
+
+.brand-slider-header {
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
+  align-items: center;
+  border-bottom: #efefef solid 1px;
+  margin: 4px auto;
+  margin-bottom: 0;
+}
+
+.brand-slider-header h3 {
+  border-bottom: #e73030 solid 2px;
+  padding: 5px 15px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.brand-slider-item {
+  display: flex;
+  height: 100%;
+  margin: 0 10px;
+  align-items: center;
+}
+
+.brand-slider-item img {
+  height: 130px;
+  width: 130px;
+  padding: 7px;
+  border: #e73030 1px solid;
+}
+
+.splide {
+  height: auto; /* Allow height to adjust based on content */
 }
 
 .splide__slide img {
-  width: 100%;
-  border-radius: 5px;
+  max-height: 100%; /* Ensure images fit properly */
+  width: auto; /* Maintain aspect ratio */
 }
