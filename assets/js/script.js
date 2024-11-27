@@ -28,9 +28,9 @@ window.onclick = function (event) {
 | Slide Show Section
 |--------------------------------------------------------------------------
 */
-
 document.addEventListener('DOMContentLoaded', function () {
-  var main = new Splide('#main-carousel', {
+  new Splide('#main-carousel', {
+    direction: 'rtl',
     type: 'loop',
     rewind: true,
     pagination: true,
@@ -39,7 +39,55 @@ document.addEventListener('DOMContentLoaded', function () {
     interval: 4000,
     speed: 1000,
     rewindSpeed: 1000
-  });
-
-  main.mount();
+  }).mount();
 });
+
+
+/*
+|--------------------------------------------------------------------------
+| Product Slide Show Section
+|--------------------------------------------------------------------------
+*/
+new Splide('#Most-Viewed-Product-Splide', {
+  direction: 'rtl',
+  type: 'loop',
+  perPage: 5,
+  pagination: false,
+  arrows: true,
+  autoplay: true,
+  speed: 1000,
+  perMove: 1,
+  fixedWidth: '270px',
+}).mount();
+
+
+new Splide('#Suggested-Product-Splide', {
+  direction: 'rtl',
+  type: 'loop',
+  perPage: 5,
+  pagination: false,
+  arrows: true,
+  autoplay: true,
+  speed: 1000,
+  perMove: 1,
+  fixedWidth: '270px',
+}).mount();
+
+
+/*
+|--------------------------------------------------------------------------
+| Brands Slide Show Section
+|--------------------------------------------------------------------------
+*/
+
+new Splide('#Brands-Splide', {
+  direction: 'rtl',
+  type: 'loop',
+  perPage: 5,
+  pagination: false,
+  arrows: true,
+  autoplay: true,
+  speed: 1000,
+  perMove: 1,
+  fixedWidth: '270px',
+}).mount();
