@@ -3,7 +3,6 @@
 | DropDOwn BTN in Header
 |--------------------------------------------------------------------------
 */
-
 function dropdown() {
   document.getElementById("clickDrop").classList.toggle("click-show");
 }
@@ -79,15 +78,13 @@ new Splide('#Suggested-Product-Splide', {
 | Brands Slide Show Section
 |--------------------------------------------------------------------------
 */
-
 new Splide('#Brands-Splide', {
   direction: 'rtl',
   type: 'loop',
-  perPage: 5,
+  perPage: 6,
   pagination: false,
   arrows: true,
   autoplay: true,
   speed: 1000,
   perMove: 1,
-  fixedWidth: '270px',
 }).mount();

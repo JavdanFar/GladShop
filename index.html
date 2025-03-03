@@ -1,368 +1,622 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>طراحی فرجام</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/icons/FontAwesome/css/all.css" />
-    <link rel="stylesheet" href="assets/libs/Splide/splide.min.css" />
-  </head>
 
-  <body>
-    <!--
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>طراحی فرجام</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/icons/FontAwesome/css/all.css" />
+  <link rel="stylesheet" href="assets/libs/Splide/splide.min.css" />
+</head>
+
+<body>
+  <!--
 |--------------------------------------------------------------------------
 | Header Section
 |-------------------------------------------------------------------------- 
 -->
-    <header>
-      <div class="container">
-        <div class="w-100 h-100 header-content">
-          <div class="header-main-content">
-            <h2>طراحی فرجام</h2>
-            <div class="search-container">
-              <i class="fa-light fa-magnifying-glass"></i>
-              <input type="text" class="search" placeholder="جست و جو ..." />
+  <header>
+    <div class="container">
+      <div class="w-100 h-100 header-content">
+        <div class="header-main-content">
+          <h2>طراحی فرجام</h2>
+          <div class="search-container">
+            <i class="fa-light fa-magnifying-glass"></i>
+            <input type="text" class="search" placeholder="جست و جو ..." />
+          </div>
+        </div>
+
+        <div class="icon-container">
+          <div class="click-dropdown">
+            <button onclick="dropdown()" class="dropbtn">
+              <i class="fa-solid fa-user dd-btn header-icon"></i>
+            </button>
+            <div id="clickDrop" class="click-dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
             </div>
           </div>
+          <div class="border-right"></div>
 
-          <div class="icon-container">
-            <div class="click-dropdown">
-              <button onclick="dropdown()" class="dropbtn">
-                <i class="fa-solid fa-user dd-btn header-icon"></i>
-              </button>
-              <div id="clickDrop" class="click-dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-            </div>
-            <div class="border-right"></div>
-
-            <div class="hover-dropdown">
-              <button class="dropbtn">
-                <i class="fa-solid fa-cart-shopping header-icon"></i>
-              </button>
-              <div class="hover-dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
+          <div class="hover-dropdown">
+            <button class="dropbtn">
+              <i class="fa-solid fa-cart-shopping header-icon"></i>
+            </button>
+            <div class="hover-dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
             </div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!--
+  <!--
 |--------------------------------------------------------------------------
 | SubHeader (Navbar) Section
 |-------------------------------------------------------------------------- 
 -->
-    <nav class="sub-header">
-      <div class="container h-100">
-        <ul>
-          <div class="mega-menu">
-            <button class="dropbtn">
-              دسته بندی کالا ها
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="mega-menu-content">
-              <div class="row">
-                <div class="column">
-                  <h3>موبایل</h3>
-                  <a href="#">سامسونگ</a>
-                  <a href="#">اپل</a>
-                  <a href="#">شیاومی</a>
-                </div>
-                <div class="column">
-                  <h3>کالای دیجیتال</h3>
-                  <a href="#">ماوس</a>
-                  <a href="#">کیبورد</a>
-                  <a href="#">گرافیک</a>
-                </div>
-                <div class="column">
-                  <h3>خانه و آشپزخانه</h3>
-                  <a href="#">گاز</a>
-                  <a href="#">یخچال</a>
-                  <a href="#">لباس شویی</a>
-                </div>
+  <nav class="sub-header">
+    <div class="container h-100">
+      <div class="menubar-container h-100">
+        <div class="mega-menu-dropdown">
+          <div class="mega-menu-header ">
+            <i class="fa-solid fa-bars"></i>
+            <a href="#">دسته بندی کالاها</a>
+
+            <!-- ----------------MegaMenu Section---------------- -->
+            <div class="mega-menu-container">
+              <div class="mega-menu">
+                <ul>
+                  <li>
+                    <a class="mega-menu-titles" href="#">موبایل</a>
+                    <div class="mega-submenu">
+                      <div class="mega-submenu-columns">
+
+                        <div class="mega-submenu-column">
+                          <h4>
+                            برندهای مختلف گوشی موبایل
+                            <i class="fa-solid fa-angle-left"></i>
+                          </h4>
+
+                          <br>
+                          <ul>
+                            <li><a href="#">سامسونگ</a></li>
+                            <li><a href="#">آیفون</a></li>
+                            <li><a href="#">شیائومی</a></li>
+                            <li><a href="#">هواوی</a></li>
+                            <li><a href="#">نوکیا</a></li>
+                          </ul>
+                        </div>
+                        <div class="mega-submenu-column">
+                          <h4>برندهای معروف گوشی موبایل
+                            <i class="fa-solid fa-angle-left"></i>
+                          </h4>
+                          <br>
+                          <ul>
+                            <li><a href="#">سامسونگ</a></li>
+                            <li><a href="#">آیفون</a></li>
+                            <li><a href="#">شیائومی</a></li>
+                            <li><a href="#">هواوی</a></li>
+                            <li><a href="#">نوکیا</a></li>
+                          </ul>
+                        </div>
+                        <div class="mega-submenu-column">
+                          <h4>برندهای معروف گوشی موبایل
+                            <i class="fa-solid fa-angle-left"></i>
+                          </h4>
+                          <br>
+                          <ul>
+                            <li><a href="#">سامسونگ</a></li>
+                            <li><a href="#">آیفون</a></li>
+                            <li><a href="#">شیائومی</a></li>
+                            <li><a href="#">هواوی</a></li>
+                            <li><a href="#">نوکیا</a></li>
+                          </ul>
+                        </div>
+                        <div class="mega-submenu-column">
+                          <h4>برندهای معروف گوشی موبایل
+                            <i class="fa-solid fa-angle-left"></i>
+                          </h4>
+                          <br>
+                          <ul>
+                            <li><a href="#">سامسونگ</a></li>
+                            <li><a href="#">آیفون</a></li>
+                            <li><a href="#">شیائومی</a></li>
+                            <li><a href="#">هواوی</a></li>
+                            <li><a href="#">نوکیا</a></li>
+                          </ul>
+                        </div>
+                        <div class="mega-submenu-column">
+                          <h4>برندهای معروف گوشی موبایل
+                            <i class="fa-solid fa-angle-left"></i>
+                          </h4>
+                          <br>
+                          <ul>
+                            <li><a href="#">سامسونگ</a></li>
+                            <li><a href="#">آیفون</a></li>
+                            <li><a href="#">شیائومی</a></li>
+                            <li><a href="#">هواوی</a></li>
+                            <li><a href="#">نوکیا</a></li>
+                          </ul>
+                        </div>
+                        <div class="mega-submenu-column">
+                          <h4>برندهای معروف گوشی موبایل
+                            <i class="fa-solid fa-angle-left"></i>
+                          </h4>
+                          <br>
+                          <ul>
+                            <li><a href="#">سامسونگ</a></li>
+                            <li><a href="#">آیفون</a></li>
+                            <li><a href="#">شیائومی</a></li>
+                            <li><a href="#">هواوی</a></li>
+                            <li><a href="#">نوکیا</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <a class="mega-menu-titles" href="#">کامپیوتر</a>
+                    <div class="mega-submenu">
+                      <div class="mega-submenu-columns">
+                        <div class="mega-submenu-column">
+                          <h4>برندهای rtyuioوبایل
+                            <i class="fa-solid fa-angle-left"></i>
+                          </h4>
+                          <br>
+                          <ul>
+                            <li><a href="#">سامسونگ</a></li>
+                            <li><a href="#">آیفون</a></li>
+                            <li><a href="#">شیائومی</a></li>
+                            <li><a href="#">هواوی</a></li>
+                            <li><a href="#">نوکیا</a></li>
+                          </ul>
+                        </div>
+                        <div class="mega-submenu-column">
+                          <h4>برندهای معروف گوشی موبایل
+                            <i class="fa-solid fa-angle-left"></i>
+                          </h4>
+                          <br>
+                          <ul>
+                            <li><a href="#">سامسونگ</a></li>
+                            <li><a href="#">آیفون</a></li>
+                            <li><a href="#">شیائومی</a></li>
+                            <li><a href="#">هواوی</a></li>
+                            <li><a href="#">نوکیا</a></li>
+                          </ul>
+                        </div>
+                        <div class="mega-submenu-column">
+                          <h4>برندهای معروف گوشی موبایل
+                            <i class="fa-solid fa-angle-left"></i>
+                          </h4>
+                          <br>
+                          <ul>
+                            <li><a href="#">سامسونگ</a></li>
+                            <li><a href="#">آیفون</a></li>
+                            <li><a href="#">شیائومی</a></li>
+                            <li><a href="#">هواوی</a></li>
+                            <li><a href="#">نوکیا</a></li>
+                          </ul>
+                        </div>
+                        <div class="mega-submenu-column">
+                          <h4>برندهای معروف گوشی موبایل
+                            <i class="fa-solid fa-angle-left"></i>
+                          </h4>
+                          <br>
+                          <ul>
+                            <li><a href="#">سامسونگ</a></li>
+                            <li><a href="#">آیفون</a></li>
+                            <li><a href="#">شیائومی</a></li>
+                            <li><a href="#">هواوی</a></li>
+                            <li><a href="#">نوکیا</a></li>
+                          </ul>
+                        </div>
+                        <div class="mega-submenu-column">
+                          <h4>برندهای معروف گوشی موبایل
+                            <i class="fa-solid fa-angle-left"></i>
+                          </h4>
+                          <br>
+                          <ul>
+                            <li><a href="#">سامسونگ</a></li>
+                            <li><a href="#">آیفون</a></li>
+                            <li><a href="#">شیائومی</a></li>
+                            <li><a href="#">هواوی</a></li>
+                            <li><a href="#">نوکیا</a></li>
+                          </ul>
+                        </div>
+                        <div class="mega-submenu-column">
+                          <h4>برندهای معروف گوشی موبایل
+                            <i class="fa-solid fa-angle-left"></i>
+                          </h4>
+                          <br>
+                          <ul>
+                            <li><a href="#">سامسونگ</a></li>
+                            <li><a href="#">آیفون</a></li>
+                            <li><a href="#">شیائومی</a></li>
+                            <li><a href="#">هواوی</a></li>
+                            <li><a href="#">نوکیا</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <a class="mega-menu-titles" href="#">لپ تاپ</a>
+                    <div class="mega-submenu">
+                      <div class="mega-submenu-columns">
+                        <div class="mega-submenu-column">
+                          <h4>برندهای مختلف گوشی موبایل
+                            <i class="fa-solid fa-angle-left"></i>
+                          </h4>
+                          <br>
+                          <ul>
+                            <li><a href="#">سامسونگ</a></li>
+                            <li><a href="#">آیفون</a></li>
+                            <li><a href="#">شیائومی</a></li>
+                            <li><a href="#">هواوی</a></li>
+                            <li><a href="#">نوکیا</a></li>
+                          </ul>
+                        </div>
+                        <div class="mega-submenu-column">
+                          <h4>برندهای معروف گوشی موبایل
+                            <i class="fa-solid fa-angle-left"></i>
+                          </h4>
+                          <br>
+                          <ul>
+                            <li><a href="#">سامسونگ</a></li>
+                            <li><a href="#">آیفون</a></li>
+                            <li><a href="#">شیائومی</a></li>
+                            <li><a href="#">هواوی</a></li>
+                            <li><a href="#">نوکیا</a></li>
+                          </ul>
+                        </div>
+                        <div class="mega-submenu-column">
+                          <h4>برندهای معروف گوشی موبایل
+                            <i class="fa-solid fa-angle-left"></i>
+                          </h4>
+                          <br>
+                          <ul>
+                            <li><a href="#">سامسونگ</a></li>
+                            <li><a href="#">آیفون</a></li>
+                            <li><a href="#">شیائومی</a></li>
+                            <li><a href="#">هواوی</a></li>
+                            <li><a href="#">نوکیا</a></li>
+                          </ul>
+                        </div>
+                        <div class="mega-submenu-column">
+                          <h4>برندهای معروف گوشی موبایل
+                            <i class="fa-solid fa-angle-left"></i>
+                          </h4>
+                          <br>
+                          <ul>
+                            <li><a href="#">سامسونگ</a></li>
+                            <li><a href="#">آیفون</a></li>
+                            <li><a href="#">شیائومی</a></li>
+                            <li><a href="#">هواوی</a></li>
+                            <li><a href="#">نوکیا</a></li>
+                          </ul>
+                        </div>
+                        <div class="mega-submenu-column">
+                          <h4>برندهای معروف گوشی موبایل
+                            <i class="fa-solid fa-angle-left"></i>
+                          </h4>
+                          <br>
+                          <ul>
+                            <li><a href="#">سامسونگ</a></li>
+                            <li><a href="#">آیفون</a></li>
+                            <li><a href="#">شیائومی</a></li>
+                            <li><a href="#">هواوی</a></li>
+                            <li><a href="#">نوکیا</a></li>
+                          </ul>
+                        </div>
+                        <div class="mega-submenu-column">
+                          <h4>برندهای معروف گوشی موبایل
+                            <i class="fa-solid fa-angle-left"></i>
+                          </h4>
+                          <br>
+                          <ul>
+                            <li><a href="#">سامسونگ</a></li>
+                            <li><a href="#">آیفون</a></li>
+                            <li><a href="#">شیائومی</a></li>
+                            <li><a href="#">هواوی</a></li>
+                            <li><a href="#">نوکیا</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <li>
-            <div class="border-right"></div>
-          </li>
-          <li><a href="#">سوپر مارکت</a></li>
-          <li><a href="#">تخفیف ها</a></li>
-          <li><a href="#">فروشگاه من</a></li>
-          <li><a href="#">فروشگاه پلاس</a></li>
-          <li><a href="#">درباره ما</a></li>
-          <li><a href="#">فروشنده شوید</a></li>
-          <li><a href="#">فرصت های شغلی</a></li>
+        </div>
+        <!-- ----------------MegaMenu Section---------------- -->
+        <ul>
+          <li class="sub-header-option"><a href="#">سوپر مارکت</a></li>
+          <li class="sub-header-option"><a href="#">تخفیف ها</a></li>
+          <li class="sub-header-option"><a href="#">فروشگاه من</a></li>
+          <li class="sub-header-option"><a href="#">فروشگاه پلاس</a></li>
+          <li class="sub-header-option"><a href="#">درباره ما</a></li>
+          <li class="sub-header-option"><a href="#">فروشنده شوید</a></li>
+          <li class="sub-header-option"><a href="#">فرصت های شغلی</a></li>
         </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!--
+  <!--
 |--------------------------------------------------------------------------
 | Slideshow Section
 |-------------------------------------------------------------------------- 
 -->
-    <div class="container">
-      <div class="slider-images-container">
-        <div class="slider-right-side">
-          <div id="main-carousel" class="splide">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <a href="https://digikala.com">
-                    <img src="assets/images/slideshow/1.jpg" alt="1" />
-                  </a>
-                </li>
-                <li class="splide__slide">
-                  <a href="https://digikala.com">
-                    <img src="assets/images/slideshow/2.jpg" alt="2" />
-                  </a>
-                </li>
-                <li class="splide__slide">
-                  <a href="https://digikala.com">
-                    <img src="assets/images/slideshow/3.jpg" alt="3" />
-                  </a>
-                </li>
-                <li class="splide__slide">
-                  <a href="https://digikala.com">
-                    <img src="assets/images/slideshow/4.jpg" alt="4" />
-                  </a>
-                </li>
-              </ul>
-            </div>
+  <div class="container">
+    <div class="slider-images-container">
+      <div class="slider-right-side">
+        <div id="main-carousel" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <a href="https://digikala.com">
+                  <img src="assets/images/slideshow/1.jpg" alt="1" />
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="https://digikala.com">
+                  <img src="assets/images/slideshow/2.jpg" alt="2" />
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="https://digikala.com">
+                  <img src="assets/images/slideshow/3.jpg" alt="3" />
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="https://digikala.com">
+                  <img src="assets/images/slideshow/4.jpg" alt="4" />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
+      </div>
 
-        <div class="slider-left-side">
-          <div><img src="assets/images/slideshow/12.gif" alt="" /></div>
-          <div><img src="assets/images/slideshow/11.jpg" alt="" /></div>
-        </div>
+      <div class="slider-left-side">
+        <div><img src="assets/images/slideshow/12.gif" alt="" /></div>
+        <div><img src="assets/images/slideshow/11.jpg" alt="" /></div>
       </div>
     </div>
+  </div>
 
-    <!--
+  <!--
 |--------------------------------------------------------------------------
 | Most Viewed Products Section
 |-------------------------------------------------------------------------- 
 -->
-    <div class="container">
-      <div class="products-slider-container">
-        <div class="products-slider-header">
-          <h3>پربازدید ترین کالاها</h3>
-          <a href="#">مشاهده همه</a>
-        </div>
-
-        <section id="Most-Viewed-Product-Splide" class="splide" dir="ltr">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div class="products-slider-item">
-                  <div class="products-slider-item-image">
-                    <img class="" src="assets/images/products/1.jpg" alt="" />
-                  </div>
-                  <div class="products-slider-item-title">Galaxy S20 FE</div>
-                  <div class="products-slider-item-price">20,000,000 تومان</div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="products-slider-item">
-                  <div class="products-slider-item-image">
-                    <img class="" src="assets/images/products/10.jpg" alt="" />
-                  </div>
-                  <div class="products-slider-item-title">Galaxy S20 FE</div>
-                  <div class="products-slider-item-price">20,000,000 تومان</div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="products-slider-item">
-                  <div class="products-slider-item-image">
-                    <img class="" src="assets/images/products/12.jpg" alt="" />
-                  </div>
-                  <div class="products-slider-item-title">Galaxy S20 FE</div>
-                  <div class="products-slider-item-price">20,000,000 تومان</div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="products-slider-item">
-                  <div class="products-slider-item-image">
-                    <img class="" src="assets/images/products/13.jpg" alt="" />
-                  </div>
-                  <div class="products-slider-item-title">Galaxy S20 FE</div>
-                  <div class="products-slider-item-price">20,000,000 تومان</div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="products-slider-item">
-                  <div class="products-slider-item-image">
-                    <img class="" src="assets/images/products/14.jpg" alt="" />
-                  </div>
-                  <div class="products-slider-item-title">Galaxy S20 FE</div>
-                  <div class="products-slider-item-price">20,000,000 تومان</div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="products-slider-item">
-                  <div class="products-slider-item-image">
-                    <img class="" src="assets/images/products/15.jpg" alt="" />
-                  </div>
-                  <div class="products-slider-item-title">Galaxy S20 FE</div>
-                  <div class="products-slider-item-price">20,000,000 تومان</div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="products-slider-item">
-                  <div class="products-slider-item-image">
-                    <img class="" src="assets/images/products/18.jpg" alt="" />
-                  </div>
-                  <div class="products-slider-item-title">Galaxy S20 FE</div>
-                  <div class="products-slider-item-price">20,000,000 تومان</div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <div class="container">
+    <div class="products-slider-container">
+      <div class="products-slider-header">
+        <h4>پربازدید ترین کالاها
+          <i class="fa-solid fa-angle-left"></i>
+        </h4>
+        <a href="#">مشاهده همه</a>
       </div>
-    </div>
 
-    <!--
+      <section id="Most-Viewed-Product-Splide" class="splide" dir="ltr">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="products-slider-item">
+                <div class="products-slider-item-image">
+                  <img class="" src="assets/images/products/1.jpg" alt="" />
+                </div>
+                <div class="products-slider-item-title">Galaxy S20 FE</div>
+                <div class="products-slider-item-price">20,000,000 تومان</div>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="products-slider-item">
+                <div class="products-slider-item-image">
+                  <img class="" src="assets/images/products/10.jpg" alt="" />
+                </div>
+                <div class="products-slider-item-title">Galaxy S20 FE</div>
+                <div class="products-slider-item-price">20,000,000 تومان</div>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="products-slider-item">
+                <div class="products-slider-item-image">
+                  <img class="" src="assets/images/products/12.jpg" alt="" />
+                </div>
+                <div class="products-slider-item-title">Galaxy S20 FE</div>
+                <div class="products-slider-item-price">20,000,000 تومان</div>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="products-slider-item">
+                <div class="products-slider-item-image">
+                  <img class="" src="assets/images/products/13.jpg" alt="" />
+                </div>
+                <div class="products-slider-item-title">Galaxy S20 FE</div>
+                <div class="products-slider-item-price">20,000,000 تومان</div>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="products-slider-item">
+                <div class="products-slider-item-image">
+                  <img class="" src="assets/images/products/14.jpg" alt="" />
+                </div>
+                <div class="products-slider-item-title">Galaxy S20 FE</div>
+                <div class="products-slider-item-price">20,000,000 تومان</div>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="products-slider-item">
+                <div class="products-slider-item-image">
+                  <img class="" src="assets/images/products/15.jpg" alt="" />
+                </div>
+                <div class="products-slider-item-title">Galaxy S20 FE</div>
+                <div class="products-slider-item-price">20,000,000 تومان</div>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="products-slider-item">
+                <div class="products-slider-item-image">
+                  <img class="" src="assets/images/products/18.jpg" alt="" />
+                </div>
+                <div class="products-slider-item-title">Galaxy S20 FE</div>
+                <div class="products-slider-item-price">20,000,000 تومان</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!--
 |--------------------------------------------------------------------------
 | Banner Section
 |-------------------------------------------------------------------------- 
 -->
-    <div class="container">
-      <div class="banner">
-        <div class="banner-image"><img src="./assets/images/ads/two-col-1.jpg" alt="banner1" /></div>
-        <div class="banner-image"><img src="./assets/images/ads/two-col-2.jpg" alt="banner2" /></div>
-      </div>
+  <div class="container">
+    <div class="banner">
+      <div class="banner-image"><img src="./assets/images/ads/two-col-1.jpg" alt="banner1" /></div>
+      <div class="banner-image"><img src="./assets/images/ads/two-col-2.jpg" alt="banner2" /></div>
     </div>
+  </div>
 
-    <!--
+  <!--
 |--------------------------------------------------------------------------
 | Most Viewed Products Section
 |-------------------------------------------------------------------------- 
 -->
-    <div class="container">
-      <div class="products-slider-container">
-        <div class="products-slider-header">
-          <h3>پیشنهاد فروشگاه</h3>
-          <a href="#">مشاهده همه</a>
-        </div>
-
-        <section id="Suggested-Product-Splide" class="splide" dir="ltr">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div class="products-slider-item">
-                  <div class="products-slider-item-image">
-                    <img class="" src="assets/images/products/1.jpg" alt="" />
-                  </div>
-                  <div class="products-slider-item-title">Galaxy S20 FE</div>
-                  <div class="products-slider-item-price">20,000,000 تومان</div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="products-slider-item">
-                  <div class="products-slider-item-image">
-                    <img class="" src="assets/images/products/10.jpg" alt="" />
-                  </div>
-                  <div class="products-slider-item-title">Galaxy S20 FE</div>
-                  <div class="products-slider-item-price">20,000,000 تومان</div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="products-slider-item">
-                  <div class="products-slider-item-image">
-                    <img class="" src="assets/images/products/12.jpg" alt="" />
-                  </div>
-                  <div class="products-slider-item-title">Galaxy S20 FE</div>
-                  <div class="products-slider-item-price">20,000,000 تومان</div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="products-slider-item">
-                  <div class="products-slider-item-image">
-                    <img class="" src="assets/images/products/13.jpg" alt="" />
-                  </div>
-                  <div class="products-slider-item-title">Galaxy S20 FE</div>
-                  <div class="products-slider-item-price">20,000,000 تومان</div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="products-slider-item">
-                  <div class="products-slider-item-image">
-                    <img class="" src="assets/images/products/14.jpg" alt="" />
-                  </div>
-                  <div class="products-slider-item-title">Galaxy S20 FE</div>
-                  <div class="products-slider-item-price">20,000,000 تومان</div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="products-slider-item">
-                  <div class="products-slider-item-image">
-                    <img class="" src="assets/images/products/15.jpg" alt="" />
-                  </div>
-                  <div class="products-slider-item-title">Galaxy S20 FE</div>
-                  <div class="products-slider-item-price">20,000,000 تومان</div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="products-slider-item">
-                  <div class="products-slider-item-image">
-                    <img class="" src="assets/images/products/18.jpg" alt="" />
-                  </div>
-                  <div class="products-slider-item-title">Galaxy S20 FE</div>
-                  <div class="products-slider-item-price">20,000,000 تومان</div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <div class="container">
+    <div class="products-slider-container">
+      <div class="products-slider-header">
+        <h4>پیشنهاد فروشگاه
+          <i class="fa-solid fa-angle-left"></i>
+        </h4>
+        <a href="#">مشاهده همه</a>
       </div>
-    </div>
 
-    <!--
+      <section id="Suggested-Product-Splide" class="splide" dir="ltr">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="products-slider-item">
+                <div class="products-slider-item-image">
+                  <img class="" src="assets/images/products/1.jpg" alt="" />
+                </div>
+                <div class="products-slider-item-title">Galaxy S20 FE</div>
+                <div class="products-slider-item-price">20,000,000 تومان</div>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="products-slider-item">
+                <div class="products-slider-item-image">
+                  <img class="" src="assets/images/products/10.jpg" alt="" />
+                </div>
+                <div class="products-slider-item-title">Galaxy S20 FE</div>
+                <div class="products-slider-item-price">20,000,000 تومان</div>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="products-slider-item">
+                <div class="products-slider-item-image">
+                  <img class="" src="assets/images/products/12.jpg" alt="" />
+                </div>
+                <div class="products-slider-item-title">Galaxy S20 FE</div>
+                <div class="products-slider-item-price">20,000,000 تومان</div>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="products-slider-item">
+                <div class="products-slider-item-image">
+                  <img class="" src="assets/images/products/13.jpg" alt="" />
+                </div>
+                <div class="products-slider-item-title">Galaxy S20 FE</div>
+                <div class="products-slider-item-price">20,000,000 تومان</div>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="products-slider-item">
+                <div class="products-slider-item-image">
+                  <img class="" src="assets/images/products/14.jpg" alt="" />
+                </div>
+                <div class="products-slider-item-title">Galaxy S20 FE</div>
+                <div class="products-slider-item-price">20,000,000 تومان</div>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="products-slider-item">
+                <div class="products-slider-item-image">
+                  <img class="" src="assets/images/products/15.jpg" alt="" />
+                </div>
+                <div class="products-slider-item-title">Galaxy S20 FE</div>
+                <div class="products-slider-item-price">20,000,000 تومان</div>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="products-slider-item">
+                <div class="products-slider-item-image">
+                  <img class="" src="assets/images/products/18.jpg" alt="" />
+                </div>
+                <div class="products-slider-item-title">Galaxy S20 FE</div>
+                <div class="products-slider-item-price">20,000,000 تومان</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!--
 |--------------------------------------------------------------------------
 | Single Banner Section
 |-------------------------------------------------------------------------- 
 -->
-    <div class="container">
-      <div class="single-banner">
-        <img src="./assets/images/ads/one-col-1.jpg" alt="banner1" />
-      </div>
+  <div class="container">
+    <div class="single-banner">
+      <img src="./assets/images/ads/one-col-1.jpg" alt="banner1" />
     </div>
+  </div>
 
-    <!--
+  <!--
 |--------------------------------------------------------------------------
 | Brands Section
 |-------------------------------------------------------------------------- 
 -->
 
+  <div class="brand-section">
     <div class="container">
       <div class="brand-slider-container">
         <div class="brand-slider-header">
-          <h3>برند های ویژه</h3>
+          <h4>برند های ویژه
+            <i class="fa-solid fa-angle-left"></i>
+          </h4>
         </div>
 
-        <div>
+        <div class="brand-slider-content">
           <section id="Brands-Splide" class="splide" dir="ltr">
             <div class="splide__track">
               <ul class="splide__list">
@@ -431,8 +685,111 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="assets/libs/Splide/splide.min.js"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
+  <!--
+|--------------------------------------------------------------------------
+| Footer Section
+|-------------------------------------------------------------------------- 
+-->
+  <footer>
+    <div class="container">
+      <div class="footer-shop-features">
+        <div class="footer-shop-features-items">
+          <img src="./assets/images/footer/1.png" alt="" />
+          <p>امکان تحویل اکسپرس</p>
+        </div>
+        <div class="footer-shop-features-items">
+          <img src="./assets/images/footer/2.png" alt="" />
+          <p>امکان پرداخت در محل</p>
+        </div>
+        <div class="footer-shop-features-items">
+          <img src="./assets/images/footer/3.png" alt="" />
+          <p>7 روز هفته، 24 ساعته</p>
+        </div>
+        <div class="footer-shop-features-items">
+          <img src="./assets/images/footer/4.png" alt="" />
+          <p>7 روز ضمانت بازگشت کالا</p>
+        </div>
+        <div class="footer-shop-features-items">
+          <img src="./assets/images/footer/5.png" alt="" />
+          <p>ضمانت اصل بودن کالا</p>
+        </div>
+      </div>
+
+      <div class="footer-links-container">
+        <div class="footer-links-col-20">
+          <ul>
+            <li><a href="#">شرایط و قوانین</a></li>
+            <li><a href="#">درباره ما</a></li>
+            <li><a href="#">تماس با ما</a></li>
+            <li><a href="#">فرصت های شغلی</a></li>
+            <li><a href="#">سوالات متداول</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col-20">
+          <ul>
+            <li><a href="#">شرایط و قوانین</a></li>
+            <li><a href="#">درباره ما</a></li>
+            <li><a href="#">تماس با ما</a></li>
+            <li><a href="#">فرصت های شغلی</a></li>
+            <li><a href="#">سوالات متداول</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col-20">
+          <ul>
+            <li><a href="#">شرایط و قوانین</a></li>
+            <li><a href="#">درباره ما</a></li>
+            <li><a href="#">تماس با ما</a></li>
+            <li><a href="#">فرصت های شغلی</a></li>
+            <li><a href="#">سوالات متداول</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col-40">
+          <p>با ما همراه باشید</p>
+          <ul>
+            <li>
+              <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="about-company">
+        <h4>شرکت گلاد
+          <i class="fa-solid fa-angle-left"></i>
+        </h4>
+        <p>
+          ما همواره تلاش می کنیم بهترین خدمات را به مشتریان آمازون ارائه کنیم. به شما کمک می کنیم بهترین انتخاب را داشته
+          باشید و با اطمینان خاطر خرید را انجام بدهید و در کوتاه ترین زمان ممکن کالای
+          خود را دریافت کنید. همچنین ما 24 ساعته در هفت روز هفته به مشتریان مان خدمات ارائه می دهیم. و 7 روز ضمانت برگشت
+          برای تمامی کالاها داریم.
+        </p>
+      </div>
+
+      <div class="copyright">
+        <p>کلیه حقوق متعلق به فرامرز جاودان میباشد</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/libs/Splide/splide.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
